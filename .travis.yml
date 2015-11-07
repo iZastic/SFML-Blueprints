@@ -14,8 +14,6 @@ install:
     CMAKE_URL="http://www.netgull.com/gcc/releases/gcc-5.2.0/gcc-5.2.0.tar.gz"
     mkdir cmake && travis_retry wget --no-check-certificate --quiet -O - ${CMAKE_URL} | tar --strip-components=1 -xz -C gcc
     export PATH=${DEPS_DIR}/gcc/bin:${PATH}
-  - sudo apt-get install gcc-4.8
-  - sudo apt-get install g++-4.8
 
 before_script:
   - mkdir build
