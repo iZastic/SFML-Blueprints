@@ -63,4 +63,5 @@ void ActionTarget<T>::unbind(const T &key)
     }
 }
 
+// Declaring a template type allows implementation to be in a separate (.cpp) file
 template class ActionTarget<int>;

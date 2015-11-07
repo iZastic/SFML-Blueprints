@@ -1,7 +1,9 @@
 #include "Game.hpp"
+#include "Configuration.hpp"
 
-int main() {
-    Player::setDefaultInputs();
+int main()
+{
+    Configuration::initialize();
 
     Game game;
     game.run();

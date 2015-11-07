@@ -8,6 +8,9 @@
 #include <unordered_map>
 #include "Action.hpp"
 
+/*
+ * This is a template class so that KEY can be any type
+ */
 template<typename T = int>
 class ActionMap
 {
@@ -21,10 +24,12 @@ public:
 
     ActionMap() = default;
 
+    // Getters and setters
     void map(const T &key, const Action &action);
     const Action &get(const T &key) const;
 
 private:
+    // Unordered maps are faster at runtime
     std::unordered_map<T, Action> _map;
 };
 

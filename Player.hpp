@@ -21,35 +21,26 @@ public:
     Player();
 
     /**
-     * This c++11 feature, variadic template, simple forwards any arguments to the
+     * This c++11 feature, variadic template, simply forwards any arguments to the
      * parent class without knowing them. This makes it possible to use both functions.
      */
     template<typename ... Args>
     void setPosition(Args &&... args)
     {
-        _shape.setPosition(std::forward<Args>(args) ...);
+        _ship.setPosition(std::forward<Args>(args) ...);
     }
 
     void processEvents();
     void update(sf::Time deltaTime);
 
-    enum PlayerInputs {
-        Up,
-        Left,
-        Right
-    };
-    static void setDefaultInputs();
-
 private:
     // Follow with, override, to make sure the function is overridden
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
-    sf::RectangleShape _shape;
+    sf::Sprite _ship;
     sf::Vector2f _velocity;
     bool _isMoving;
     int _rotation;
-
-    static ActionMap<int> _playerInputs;
 };
 
 

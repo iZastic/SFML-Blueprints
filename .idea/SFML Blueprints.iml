@@ -9,10 +9,13 @@
       <sourceFolder url="file://$MODULE_DIR$/ActionTarget.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ActionTarget.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Configuration.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Configuration.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Game.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Game.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Player.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Player.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ResourceManager.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake_modules/FindSFML.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
@@ -22,20 +25,20 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/i686-w64-mingw32/include" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include/objc" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include/ssp" />
-          <root url="file://$MODULE_DIR$/../../../SFML-2.3.2/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/i686-w64-mingw32/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include/objc" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include/ssp" />
+          <root url="file://$MODULE_DIR$/../../SFML-2.3.2/include" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/i686-w64-mingw32/include" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include/objc" />
-          <root url="file://$MODULE_DIR$/../../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include/ssp" />
-          <root url="file://$MODULE_DIR$/../../../SFML-2.3.2/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/i686-w64-mingw32/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include/objc" />
+          <root url="file://$MODULE_DIR$/../../MinGW-w64/lib/gcc/i686-w64-mingw32/5.2.0/include/ssp" />
+          <root url="file://$MODULE_DIR$/../../SFML-2.3.2/include" />
         </SOURCES>
       </library>
     </orderEntry>
