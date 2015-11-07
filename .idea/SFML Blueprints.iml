@@ -2,22 +2,23 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Action.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Action.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ActionMap.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ActionMap.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ActionTarget.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ActionTarget.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Configuration.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Configuration.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Game.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Game.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Player.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Player.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ResourceManager.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Action.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Action.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ActionMap.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ActionMap.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ActionTarget.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ActionTarget.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Configuration.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Configuration.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Game.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Game.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Player.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Player.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ResourceManager.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-2/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake_modules/FindSFML.cmake" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
