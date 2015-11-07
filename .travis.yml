@@ -2,7 +2,9 @@ language: cpp
 
 compiler:
     - gcc
-    - clang
+
+install:
+    - brew install cmake
 
 before_script:
     - mkdir build
