@@ -15,7 +15,7 @@ void Configuration::initialize()
 
 void Configuration::initTextures()
 {
-    textures.load(Textures::Player, "../../res/images/ship.png");
+    textures.load(Textures::Player, "../../res/images/player/Ship.png");
 }
 
 void Configuration::initPlayerInputs()

@@ -18,10 +18,37 @@
       <sourceFolder url="file://$MODULE_DIR$/Chapter-2/Player.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Chapter-2/ResourceManager.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Chapter-2/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Game.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Game.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Action.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ActionMap.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ActionTarget.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Collision.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Configuration.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Enemy.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Entity.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Game.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Meteor.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Player.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ResourceManager.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Saucer.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Shoot.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Utils.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/World.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Action.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/ActionMap.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/ActionTarget.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Collision.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Configuration.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Enemy.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Entity.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Game.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Meteor.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Player.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Saucer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/Shoot.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/World.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/Asteroids/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter-3/CmakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake_modules/FindSFML.cmake" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
@@ -30,6 +57,7 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/i686-w64-mingw32/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
@@ -38,6 +66,7 @@
           <root url="file://$MODULE_DIR$/../../SFML-2.3.2/include" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/i686-w64-mingw32/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include" />
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include-fixed" />
@@ -45,6 +74,23 @@
           <root url="file://$MODULE_DIR$/../../MinGW-w64/mingw32/lib/gcc/i686-w64-mingw32/5.2.0/include/ssp" />
           <root url="file://$MODULE_DIR$/../../SFML-2.3.2/include" />
         </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ActionMap.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Player.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Action.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Shoot.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/World.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Configuration.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Game.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Meteor.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Entity.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Collision.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Utils.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Saucer.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/Enemy.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ResourceManager.hpp" />
+          <root url="file://$MODULE_DIR$/Chapter-3/Asteroids/include/ActionTarget.hpp" />
+        </excluded>
       </library>
     </orderEntry>
   </component>
