@@ -1,12 +1,10 @@
-# source: http://breathe.git.sourceforge.net
-#
 # Locate Box2D library
 # This module defines
 # BOX2D_LIBRARY, the name of the library to link against
 # BOX2D_FOUND, if false, do not try to link to Box2D
 # BOX2D_INCLUDE_DIR, where to find Box2D headers
 #
-# Created by Sven-Hendrik Haase. Based on the FindZLIB.cmake module.
+# Created by iZastic. Based on multiple examples
 
 IF (BOX2D_INCLUDE_DIR)
     # Already in cache, be silent
@@ -32,13 +30,13 @@ find_path(BOX2D_INCLUDE_DIR Box2D/Box2D.h
         PATH_SUFFIXES include Include
         PATHS ${FIND_BOX2D_PATHS})
 
-# find the BOX2D library directory
+# find the BOX2D release library
 FIND_LIBRARY(BOX2D_RELEASE_LIBRARY
         NAMES box2d Box2d BOX2D Box2D
         PATH_SUFFIXES lib64 lib lib/release Library
         PATHS ${FIND_BOX2D_PATHS})
 
-# find the BOX2D library directory
+# find the BOX2D debug library
 FIND_LIBRARY(BOX2D_DEBUG_LIBRARY
         NAMES box2dd box2d_d Box2d_d BOX2D_d Box2D_d
         PATH_SUFFIXES lib64 lib lib/debug Library
@@ -64,6 +62,5 @@ SET(BOX2D_LIBRARIES "${BOX2D_LIBRARY}")
 
 # handle the QUIETLY and REQUIRED arguments and set BOX2D_FOUND to TRUE if
 # all listed variables are TRUE
-
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(Box2D DEFAULT_MSG BOX2D_LIBRARY BOX2D_INCLUDE_DIR)
