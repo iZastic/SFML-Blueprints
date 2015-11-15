@@ -12,8 +12,10 @@ void displayWorld(std::list<b2Body *> bodies, b2World &world, sf::RenderWindow &
 
 int main(int argc, char **argv)
 {
+    sf::ContextSettings settings;
+    settings.antialiasingLevel = 8;
     // Create window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Chapter-4 HelloWorld");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Chapter-4 HelloWorld", sf::Style::Default, settings);
     window.setFramerateLimit(60);
 
     // Create world

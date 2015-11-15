@@ -37,6 +37,8 @@ namespace ztc
         _shieldShape = sf::CircleShape(std::sqrt(size.x * size.x + size.y * size.y) / 2);
         _shieldShape.setFillColor(sf::Color(255, 255, 0, 64));
         _shieldShape.setOrigin(_shieldShape.getRadius(), _shieldShape.getRadius());
+
+        _shield = sf::seconds(1.f);
     }
 
     bool Player::isCollide(const Entity &other) const
