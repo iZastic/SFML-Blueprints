@@ -17,3 +17,4 @@ include_directories(${SFML_INCLUDE_DIR} ${BOX2D_INCLUDE_DIR})
 
 add_subdirectory(Chapter-2)
 add_subdirectory(Chapter-3)
+add_subdirectory(Chapter-4)
