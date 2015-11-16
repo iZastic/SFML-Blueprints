@@ -7,7 +7,8 @@
 #include <Box2D/Box2D.h>
 #include "Converter.hpp"
 
-b2Body *createBox(b2World &world, int x, int y, int width, int height, b2BodyType type = b2_dynamicBody);
+b2Body *createBox(b2World &world, int x, int y, int width, int height, sf::Texture *texture = nullptr,
+                  b2BodyType type = b2_dynamicBody);
 void displayWorld(std::list<b2Body *> bodies, b2World &world, sf::RenderWindow &window);
 
 int main(int argc, char **argv)
@@ -24,7 +25,11 @@ int main(int argc, char **argv)
 
     // Create body storage and add ground
     std::list<b2Body *> bodies;
-    bodies.emplace_back(createBox(world, 400, 590, 800, 20, b2_staticBody));
+    bodies.emplace_back(createBox(world, 400, 590, 800, 20, nullptr, b2_staticBody));
+
+    sf::Texture texture;
+    texture.loadFromFile("../../res/images/crate.jpg");
+    texture.setSmooth(true);
 
     sf::Clock clock;
     // Minimalist game loop
@@ -37,11 +42,13 @@ int main(int argc, char **argv)
                 window.close();
             if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)
                 bodies.emplace_back(
-                        createBox(world, sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y, 32, 32));
+                        createBox(world, sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y, 32, 32,
+                                  &texture));
         }
         if (sf::Mouse::isButtonPressed(sf::Mouse::Right))
             bodies.emplace_back(
-                    createBox(world, sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y, 32, 32));
+                    createBox(world, sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y, 32, 32,
+                              &texture));
 
         window.setTitle("Chapter-4 HelloWorld | Bodies: " + std::to_string(world.GetBodyCount()) + " | FPS: " +
                         std::to_string(1.f / clock.restart().asSeconds()));
@@ -60,7 +67,7 @@ int main(int argc, char **argv)
 }
 
 
-b2Body *createBox(b2World &world, int x, int y, int width, int height, b2BodyType type)
+b2Body *createBox(b2World &world, int x, int y, int width, int height, sf::Texture *texture, b2BodyType type)
 {
     // Object definition
     b2BodyDef bodyDef;
@@ -86,11 +93,17 @@ b2Body *createBox(b2World &world, int x, int y, int width, int height, b2BodyTyp
     sf::Shape *shape = new sf::RectangleShape(sf::Vector2f(width, height));
     shape->setOrigin(width / 2.f, height / 2.f);
     shape->setPosition(sf::Vector2f(x, y));
-
-    if (type == b2_dynamicBody)
-        shape->setFillColor(sf::Color::Blue);
+    if (texture != nullptr)
+    {
+        shape->setTexture(texture);
+    }
     else
-        shape->setFillColor(sf::Color::White);
+    {
+        if (type == b2_dynamicBody)
+            shape->setFillColor(sf::Color::Blue);
+        else
+            shape->setFillColor(sf::Color::White);
+    }
 
     // Use Box2D's user data to hold the SFML shape
     res->SetUserData(shape);
